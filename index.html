@@ -54,7 +54,7 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in">Bem-vindx!</div>
+          <div class="intro-lead-in" id="introducao"></div>
           <div class="intro-heading text-uppercase">Esse é o Afeto Doces!</div>
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#portfolio">Conheça os docinhos</a>
         </div>
@@ -305,6 +305,9 @@
     <!-- Custom scripts for this template -->
     <script src="js/afeto.min.js"></script>
 
+    <script>
+      $('#introducao').load('/conteudo/introducao.html');
+    </script>
   </body>
 
 </html>
