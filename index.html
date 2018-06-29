@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Afeto</title>
+    <title>Afeto Doces</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -32,7 +32,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Afeto</a>
+        <a class="navbar-brand js-scroll-trigger capone" href="#page-top" id="nome"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -45,6 +45,9 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contato">Contato</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -55,8 +58,8 @@
       <div class="container">
         <div class="intro-text">
           <div class="intro-lead-in" id="introducao"></div>
-          <div class="intro-heading text-uppercase">Esse é o Afeto Doces!</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#portfolio">Conheça os docinhos</a>
+          <div class="intro-heading text-uppercase" id="titulo"></div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#portfolio" id="textoBotao"></a>
         </div>
       </div>
     </header>
@@ -66,8 +69,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Doces</h2>
-            <h3 class="section-subheading text-muted">Sabores para todos o momentos.</h3>
+            <h2 class="section-heading text-uppercase" id="tituloSecaoDoces"></h2>
+            <h3 class="section-subheading text-muted" id="subtituloSecaoDoces"></h3>
           </div>
         </div>
         <div class="row">
@@ -78,11 +81,11 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="conteudo/doce-01/thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Brownies</h4>
-              <p class="text-muted">Macios e deliciosos.</p>
+              <h4 id="doce01-titulo"></h4>
+              <p class="text-muted" id="doce01-subtitulo"></p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -92,28 +95,28 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="conteudo/doce-02/thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Cookies</h4>
-              <p class="text-muted">Crocantes e maravilhosos.</p>
+              <h4 id="doce02-titulo"></h4>
+              <p class="text-muted" id="doce02-subtitulo"></p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
+                  </div>
                 </div>
+                <img class="img-fluid" src="conteudo/doce-03/thumbnail.jpg" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4 id="doce03-titulo"></h4>
+                <p class="text-muted" id="doce03-subtitulo"></p>
               </div>
-              <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Cupcakes</h4>
-              <p class="text-muted">Gostosos e saborosos.</p>
             </div>
           </div>
-        </div>
       </div>
     </section>
 
@@ -122,51 +125,47 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Sobre</h2>
-            <h3 class="section-subheading text-muted">Uma breve história da portfolioria mais amada do campolim.</h3>
+            <h2 class="section-heading text-uppercase" id="tituloSecaoSobre"></h2>
+            <h3 class="section-subheading text-muted" id="subtituloSecaoSobre"></h3>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <p class="text-muted">A Afeto surgiu em 2018 quando a Sil decidiu melhorar a vida das pessoas através da culinária.</p>
-          </div>
-          <div class="col-md-4">
-            <img class="img-fluid d-block mx-auto" src="img/sil.jpg" alt="">
-          </div>
-          <div class="col-md-4">
-            <p class="text-muted">Muito mais do que uma lojinha de doces, um estilo de vida!</p>
-          </div>
+        <div class="row" id="conteudoSecaoSobre">
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer id="contato">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Afeto 2018</span>
+            <div class="row">
+              <span class="copyright mx-auto">Copyright &copy; Afeto 2018</span>
+            </div>
+            <div class="row">
+              <img class="img-fluid d-block mx-auto" style="height: 128px; width: 128px;" src="img/logo.png" style="width: px; height: 32px;" alt="">
+            </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 centralized">
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
-                <a href="#">
+                <a target="_blank" href="https://instagram.com/afetocampolim">
                   <i class="fa fa-instagram"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a target="_blank" href="https://fb.com/afetocampolim">
                   <i class="fa fa-facebook"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a target="_blank" href="https://twitter.com/afetocampolim">
                   <i class="fa fa-twitter"></i>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 centralized">
             <ul class="list-inline">
               <li class="list-inline-item">
                   <i class="fa fa-envelope"></i>
@@ -176,8 +175,8 @@
                 </li>
                 <li class="list-inline-item">
                   <i class="fa fa-whatsapp" style="color: green;"></i>
-                  <a href="https://api.whatsapp.com/send?phone=5515981072321" target="_blank">
-                    15 98107 2321
+                  <a href="https://api.whatsapp.com/send?phone=551515988314776" target="_blank">
+                    15 98831 4776
                   </a>  
                 </li>
               </ul>
@@ -201,19 +200,11 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <h2 class="text-uppercase">Brownies</h2>
-                  <p class="item-intro text-muted">Macios e deliciosos.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                  <p>Nossos brownies são feito com amor e carinho para que você e todo mundo que você ama se sintam abraçados! Disponíveis nas versões:</p>
-                  <ul class="list-inline">
-                    <li>Standard</li>
-                    <li>Low carb</li>
-                    <li>Fit</li>
-                    <li>Vegano</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Fechar</button>
+                  <h2 class="text-uppercase" id="doce01-modal-titulo"></h2>
+                  <p class="item-intro text-muted" id="doce01-modal-subtitulo"></p>
+                  <img class="img-fluid d-block mx-auto" src="/conteudo/doce-01/full.jpg" alt="">
+                  <div id="doce01-modal-conteudo"></div>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Fechar</button>
                 </div>
               </div>
             </div>
@@ -235,20 +226,11 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Cookies</h2>
-                  <p class="item-intro text-muted">Crocantes e maravilhosos.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                  <p>Nossos cookies são feito com amor e carinho para que você e todo mundo que você ama se sintam abraçados! Disponíveis nas versões:</p>
-                  <ul class="list-inline">
-                    <li>Standard</li>
-                    <li>Low carb</li>
-                    <li>Fit</li>
-                    <li>Vegano</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Fechar</button>
+                  <h2 class="text-uppercase" id="doce02-modal-titulo"></h2>
+                  <p class="item-intro text-muted" id="doce02-modal-subtitulo"></p>
+                  <img class="img-fluid d-block mx-auto" src="/conteudo/doce-02/full.jpg" alt="">
+                  <div id="doce02-modal-conteudo"></div>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Fechar</button>
                 </div>
               </div>
             </div>
@@ -270,19 +252,11 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <h2 class="text-uppercase">Cupcakes</h2>
-                  <p class="item-intro text-muted">Gostosos e saborosos.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                  <p>Nossos cupcakes são feito com amor e carinho para que você e todo mundo que você ama se sintam abraçados! Disponíveis nas versões:</p>
-                  <ul class="list-inline">
-                    <li>Standard</li>
-                    <li>Low carb</li>
-                    <li>Fit</li>
-                    <li>Vegano</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Fechar</button>
+                  <h2 class="text-uppercase" id="doce03-modal-titulo"></h2>
+                  <p class="item-intro text-muted" id="doce03-modal-subtitulo"></p>
+                  <img class="img-fluid d-block mx-auto" src="/conteudo/doce-03/full.jpg" alt="">
+                  <div id="doce03-modal-conteudo"></div>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Fechar</button>
                 </div>
               </div>
             </div>
@@ -306,8 +280,36 @@
     <script src="js/afeto.min.js"></script>
 
     <script>
-      $('#introducao').load('/conteudo/introducao.html');
+      $('#nome').load('/conteudo/01-nome-da-loja.html');
+      $('#introducao').load('/conteudo/02-introducao.html');
+      $('#titulo').load('/conteudo/03-titulo.html');
+      $('#textoBotao').load('/conteudo/04-texto-do-botao.html');
+      $('#tituloSecaoDoces').load('/conteudo/05-titulo-secao-doces.html');
+      $('#subtituloSecaoDoces').load('/conteudo/06-subtitulo-secao-doces.html');
+      $('#tituloSecaoSobre').load('/conteudo/07-titulo-secao-sobre.html');
+      $('#subtituloSecaoSobre').load('/conteudo/08-subtitulo-secao-sobre.html');
+      $('#conteudoSecaoSobre').load('/conteudo/09-conteudo-secao-sobre.html');
+
+      $('#doce01-titulo').load('/conteudo/doce-01/01-titulo.html');
+      $('#doce01-subtitulo').load('/conteudo/doce-01/02-subtitulo.html');
+
+      $('#doce02-titulo').load('/conteudo/doce-02/01-titulo.html');
+      $('#doce02-subtitulo').load('/conteudo/doce-02/02-subtitulo.html');
+
+      $('#doce03-titulo').load('/conteudo/doce-03/01-titulo.html');
+      $('#doce03-subtitulo').load('/conteudo/doce-03/02-subtitulo.html');
+
+      $('#doce01-modal-titulo').load('/conteudo/doce-01/01-titulo.html');
+      $('#doce01-modal-subtitulo').load('/conteudo/doce-01/02-subtitulo.html');
+      $('#doce01-modal-conteudo').load('/conteudo/doce-01/03-conteudo.html');
+
+      $('#doce02-modal-titulo').load('/conteudo/doce-02/01-titulo.html');
+      $('#doce02-modal-subtitulo').load('/conteudo/doce-02/02-subtitulo.html');
+      $('#doce02-modal-conteudo').load('/conteudo/doce-02/03-conteudo.html');
+      
+      $('#doce03-modal-titulo').load('/conteudo/doce-03/01-titulo.html');
+      $('#doce03-modal-subtitulo').load('/conteudo/doce-03/02-subtitulo.html');
+      $('#doce03-modal-conteudo').load('/conteudo/doce-03/03-conteudo.html');
     </script>
   </body>
-
 </html>

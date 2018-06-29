@@ -101,6 +101,11 @@ img::-moz-selection {
   background: transparent;
 }
 
+@font-face {
+  font-family: 'CaponeCGLight';
+  src: url("/css/CaponeCGLight.otf");
+}
+
 #mainNav {
   background-color: #212529;
 }
@@ -118,7 +123,10 @@ img::-moz-selection {
 
 #mainNav .navbar-brand {
   color: #817536;
-  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+  font-family: 'CaponeCGLight';
+  font-size: 2em;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -127,6 +135,8 @@ img::-moz-selection {
 
 #mainNav .navbar-nav .nav-item .nav-link {
   font-size: 90%;
+  font-family: 'CaponeCGLight';
+  font-size: 1.2em;
   font-weight: 400;
   padding: 0.75em 0;
   letter-spacing: 1px;
@@ -149,13 +159,15 @@ img::-moz-selection {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    font-size: 1.75em;
+    font-size: 2.5em;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 1.2em;
     padding: 1.1em 1em !important;
+    font-family: 'CaponeCGLight';
   }
   #mainNav.navbar-shrink {
     padding-top: 0;
@@ -163,8 +175,8 @@ img::-moz-selection {
     background-color: #212529;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.25em;
-    padding: 12px 0;
+    font-size: 2em;
+    padding: 6px 0;
   }
 }
 
@@ -657,6 +669,7 @@ section#contact :-ms-input-placeholder {
 footer {
   padding: 25px 0;
   text-align: center;
+  background: #ccc084;
 }
 
 footer span.copyright {
@@ -695,4 +708,11 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #817536;
+}
+
+.centralized {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
