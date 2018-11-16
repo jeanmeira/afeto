@@ -58,215 +58,240 @@
         font-size: 1.2em;
       }
 
+      .wrapper-outside {
+        border-width: 2px; 
+        border-style: solid; 
+        border-color: green;
+        margin: 10px;
+      }
+
+      .wrapper-inside {
+        border-width: 2px; 
+        border-style: solid; 
+        border-color: red;
+        margin: 2px;
+      }
     </style>
   </head>
 
-  <body id="page-top">
-    <!-- Header -->
-    <header class="masthead">
-      <div class="container">
-        <div style="padding-top: 20px;">
-          <div class="row">
-            <img class="img-fluid d-block mx-auto" style="height: 128px; width: 128px;" src="img/logo.png" style="width: px; height: 32px;" alt="">
+  <body id="page-top" >
+    <div class="wrapper-outside">
+      <div class="wrapper-inside">
+        <!-- Header -->
+        <header class="masthead">
+          <div class="container">
+            <div style="padding-top: 20px;">
+              <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                  <img class="img-fluid d-block mx-auto" style="height: 100px; width: 100px;" src="img/logo.png" alt="">
+                </div>
+                <div class="col-md-4">
+                  <h3 style="padding-top: 20px;" class="mx-auto">
+                    <div class="row">
+                      <span class="col-md-12" style="color: green; text-align: center;">Afeto Doces</span>
+                    </div>
+                    <div class="row">
+                      <span class="col-md-12" style="color: red; text-align: center;">Linha Natalina</span>
+                    </div>
+                  </h3>
+                </div>
+                <div class="col-md-2"></div>
+              </div>
           </div>
-          <div class="row">
-            <h3 style="padding-top: 20px;" class="mx-auto">
-              <p style="color: green; text-align: center;">Afeto Doces</p>
-              <p style="color: red; text-align: center;">Linha Natalina</p>
-            </h3>
+        </header>
+        <div class="container">
+          <div class="row bloco">
+            <h5 class="col-md-12" style="text-align: center;">
+              <span style="color: green;">
+                <span style="text-decoration: underline;">
+                  Linha Essencial:
+                </span>
+                Panetones e chocotones artesanais. Simplesmente deliciosos!
+              </span>
+            </h5>
           </div>
-      </div>
-    </header>
-    <div class="container">
-      <div class="row">
-        <h5 class="col-md-12" style="text-align: center;">
-          <span style="color: green;">
-            <span style="text-decoration: underline;">
-              Linha Essencial:
+          <div class="row bloco"> 
+            <h6 class="col-md-12">Os sabores da nossa Linha Essencial são:</h6>
+          </div>          
+          <div class="row bloco">
+            <span class="col-md-6 nome">Panetone de Frutas</span>
+            <span class="col-md-3 preco">100g - R$6,00</span>	
+            <span class="col-md-3 preco">400g - R$20,00</span>
+            <span class="col-md-12 descricao">
+              Tradicional panetone de frutas natalino com uvas passas e frutas cristalizadas.
             </span>
-            Panetones e chocotones artesanais. Simplesmente deliciosos!
-          </span>
-        </h5>
-      </div>
-      <div class="row bloco"> 
-        <h6 class="col-md-12">Os sabores da nossa Linha Essencial são:</h6>
-      </div>          
-      <div class="row bloco">
-        <span class="col-md-6 nome">Panetone de Frutas</span>
-        <span class="col-md-3 preco">100g - R$6,00</span>	
-        <span class="col-md-3 preco">400g - R$20,00</span>
-        <span class="col-md-12 descricao">
-          Tradicional panetone de frutas natalino com uvas passas e frutas cristalizadas.
-        </span>
-      </div>
-      <div class="row bloco"> 
-        <span class="col-md-6 nome">Chocotone</span>
-        <span class="col-md-3 preco">100g - R$6,50</span>	
-        <span class="col-md-3 preco">400g - R$22,00</span>
-        <span class="col-md-6 descricao">
-          Com pedaços de chocolate meio amargo.
-        </span>
-      </div>
-      <div class="row bloco">
-        <span class="col-md-6 nome">Dois Amores</span>
-        <span class="col-md-3 preco">100g - R$6,50</span>	
-        <span class="col-md-3 preco">400g - R$22,00</span>
-        <span class="col-md-12 descricao">
-          Com pedaços de chocolate branco e pedaços de chocolate meio amargo.
-        </span>
-      </div>
-      <div class="row bloco">
-        <span class="col-md-6 nome">Choconozes</span>
-        <span class="col-md-3 preco">100g - R$7,00</span>	
-        <span class="col-md-3 preco">400g - R$23,00</span>
-        <span class="col-md-12 descricao">
-          Com cacau, nozes, pedaços de chocolate meio amargo e um toque de rum.
-        </span>
-      </div>
-      <div class="row bloco"> 
-        <span class="col-md-6 nome">Damasco</span>
-        <span class="col-md-3 preco">100g - R$7,00</span>	
-        <span class="col-md-3 preco">400g - R$23,00</span>
-        <span class="col-md-12 descricao">
-          Com damasco e pedaços de chocolate branco.
-        </span>
-      </div>
-      <div class="row bloco"> 
-        <span class="col-md-6 nome">Floresta Negra</span>
-        <span class="col-md-3 preco">100g - R$7,50</span>	
-        <span class="col-md-3 preco">400g - R$25,00</span>
-        <span class="col-md-12 descricao">
-          Massa de chocolate com cerejas e pedaços de chocolate meio amargo.
-        </span>
-      </div>
-    </div>
-    <br/>
-    <div class="container">
-      <div class="row">
-        <h5 class="col-md-12" style="text-align: center;">
-          <span style="color: red;">
-            <span style="text-decoration: underline;">
-              Linha Especial:
+          </div>
+          <div class="row bloco"> 
+            <span class="col-md-6 nome">Chocotone</span>
+            <span class="col-md-3 preco">100g - R$6,50</span>	
+            <span class="col-md-3 preco">400g - R$22,00</span>
+            <span class="col-md-6 descricao">
+              Com pedaços de chocolate meio amargo.
             </span>
-            Recheados com brigadeiro ou Doce de Leite Viçosa ®
-          </span>
-        </h5>
-      </div>
-      <div class="row bloco"> 
-        <span class="col-md-9 preco">200g - R$17,50 no kit com 2 unidades - Total R$35,00</span>	
-        <span class="col-md-3 preco">750g - R$50,00</span>
-        <span class="col-md-12 descricao">
-          Escolha um panetone ou chocotone da <i>Linha Essencial</i> e até duas opções de recheio:
-        </span>
-        <div class="col-md-4" style="padding-bottom: 0px;">
-          <ul>
-            <li>Doce de Leite</li>
-            <li>Brigadeiro Tradicional</li>
-            <li>Brigadeiro Belga</li>
-            <li>Brigadeiro Belga 70%</li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul>
-            <li>Brigadeiro de Limão Siciliano</li>
-            <li>Brigadeiro de Morango</li>
-            <li>Brigadeiro de Café</li>
-            <li>Brigadeiro de Maracujá</li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul>
-            <li>Brigadeiro de Caipirinha</li>
-            <li>Brigadeiro de Leite Ninho ®</li>
-            <li>Brigadeiro de Paçoca</li>
-            <li>Beijinho</li>
-          </ul>
-        </div>
-      </div>
-      <div class="row bloco">
-        <h5 class="col-md-12" style="text-align: center;">
-          <span style="color: #bf9000;">
-            <span style="text-decoration: underline;">
-              Linha Premium:
+          </div>
+          <div class="row bloco">
+            <span class="col-md-6 nome">Dois Amores</span>
+            <span class="col-md-3 preco">100g - R$6,50</span>	
+            <span class="col-md-3 preco">400g - R$22,00</span>
+            <span class="col-md-12 descricao">
+              Com pedaços de chocolate branco e pedaços de chocolate meio amargo.
             </span>
-            Recheados com ganache ou Nutella ®
-          </span>
-        </h5>
-      </div>
-      <div class="row bloco"> 
-        <span class="col-md-9 preco">200g - R$20,00 no kit com 2 unidades - Total R$40,00</span>	
-        <span class="col-md-3 preco">750g - R$60,00</span>
-        <span class="col-md-12 descricao">
-          Escolha um panetone ou chocotone da <i>Linha Essencial</i> e até duas opções de recheio:
-        </span>
-        <div class="col-md-4">
-          <ul>
-            <li>Nutella</li>
-            <li>Ganache Tradicional</li>
-          </ul>
+          </div>
+          <div class="row bloco">
+            <span class="col-md-6 nome">Choconozes</span>
+            <span class="col-md-3 preco">100g - R$7,00</span>	
+            <span class="col-md-3 preco">400g - R$23,00</span>
+            <span class="col-md-12 descricao">
+              Com cacau, nozes, pedaços de chocolate meio amargo e um toque de rum.
+            </span>
+          </div>
+          <div class="row bloco"> 
+            <span class="col-md-6 nome">Damasco</span>
+            <span class="col-md-3 preco">100g - R$7,00</span>	
+            <span class="col-md-3 preco">400g - R$23,00</span>
+            <span class="col-md-12 descricao">
+              Com damasco e pedaços de chocolate branco.
+            </span>
+          </div>
+          <div class="row bloco"> 
+            <span class="col-md-6 nome">Floresta Negra</span>
+            <span class="col-md-3 preco">100g - R$7,50</span>	
+            <span class="col-md-3 preco">400g - R$25,00</span>
+            <span class="col-md-12 descricao">
+              Massa de chocolate com cerejas e pedaços de chocolate meio amargo.
+            </span>
+          </div>
         </div>
-        <div class="col-md-4">
-          <ul>
-            <li>Ganache Branca</li>
-            <li>Ganache ao Leite</li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul>
-            <li>Ganache Belga</li>
-            <li>Ganache Belga 70%</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <p><h4>Observações:</h4></p>
-      <ol>
-        <li>As unidades de 200g não são vendidas individualmente.</li>
-        <li>É possível combinar os sabores da Linha Especial com os da Linha Premium. Uma unidade de 750g mista é vendida por R$55,00.</li>
-      </ol>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 centralized" >
-          <ul class="list-inline social-buttons" style="text-align: center;">
-            <li class="list-inline-item">
-              <a target="_blank" href="https://instagram.com/afetocampolim">
-                <i class="fa fa-instagram"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a target="_blank" href="https://fb.com/afetocampolim">
-                <i class="fa fa-facebook"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a target="_blank" href="https://twitter.com/afetocampolim">
-                <i class="fa fa-twitter" style="text-align: center;"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-6 centralized" style="font-size: 0.8em;">
-          <ul class="list-inline">
-            <div class="row">
-              <li class="list-inline-item">
-                <i class="fa fa-envelope" style="color: #aaa;"></i>
-                <a href="mailto:contato@afetocampolim.com.br" target="_blank">
-                  contato@afetocampolim.com.br
-                </a>
-              </li>
+        <br/>
+        <div class="container">
+          <div class="row">
+            <h5 class="col-md-12" style="text-align: center;">
+              <span style="color: red;">
+                <span style="text-decoration: underline;">
+                  Linha Especial:
+                </span>
+                Recheados com brigadeiro ou Doce de Leite Viçosa ®
+              </span>
+            </h5>
+          </div>
+          <div class="row bloco"> 
+            <span class="col-md-9 preco">200g - R$17,50 no kit com 2 unidades - Total R$35,00</span>	
+            <span class="col-md-3 preco">750g - R$50,00</span>
+            <span class="col-md-12 descricao">
+              Escolha um panetone ou chocotone da <i>Linha Essencial</i> e até duas opções de recheio:
+            </span>
+            <div class="col-md-4" style="padding-bottom: 0px;">
+              <ul>
+                <li>Doce de Leite</li>
+                <li>Brigadeiro Tradicional</li>
+                <li>Brigadeiro Belga</li>
+                <li>Brigadeiro Belga 70%</li>
+              </ul>
             </div>
-            <div class="row">
-              <li class="list-inline-item">
-                <i class="fa fa-whatsapp" style="color: green;"></i>
-                <a href="https://api.whatsapp.com/send?phone=5515988314776" target="_blank">
-                  15 98831 4776
-                </a>  
-              </li>
+            <div class="col-md-4">
+              <ul>
+                <li>Brigadeiro de Limão Siciliano</li>
+                <li>Brigadeiro de Morango</li>
+                <li>Brigadeiro de Café</li>
+                <li>Brigadeiro de Maracujá</li>
+              </ul>
             </div>
-            </ul>
-        </div>  
+            <div class="col-md-4">
+              <ul>
+                <li>Brigadeiro de Caipirinha</li>
+                <li>Brigadeiro de Leite Ninho ®</li>
+                <li>Brigadeiro de Paçoca</li>
+                <li>Beijinho</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row bloco">
+            <h5 class="col-md-12" style="text-align: center;">
+              <span style="color: #bf9000;">
+                <span style="text-decoration: underline;">
+                  Linha Premium:
+                </span>
+                Recheados com ganache ou Nutella ®
+              </span>
+            </h5>
+          </div>
+          <div class="row bloco"> 
+            <span class="col-md-9 preco">200g - R$20,00 no kit com 2 unidades - Total R$40,00</span>	
+            <span class="col-md-3 preco">750g - R$60,00</span>
+            <span class="col-md-12 descricao">
+              Escolha um panetone ou chocotone da <i>Linha Essencial</i> e até duas opções de recheio:
+            </span>
+            <div class="col-md-4">
+              <ul>
+                <li>Nutella</li>
+                <li>Ganache Tradicional</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul>
+                <li>Ganache Branca</li>
+                <li>Ganache ao Leite</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul>
+                <li>Ganache Belga</li>
+                <li>Ganache Belga 70%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <p><h4>Observações:</h4></p>
+          <ol>
+            <li>As unidades de 200g não são vendidas individualmente.</li>
+            <li>É possível combinar os sabores da Linha Especial com os da Linha Premium. Uma unidade de 750g mista é vendida por R$55,00.</li>
+          </ol>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 centralized" >
+              <ul class="list-inline social-buttons" style="text-align: center;">
+                <li class="list-inline-item">
+                  <a target="_blank" href="https://instagram.com/afetocampolim">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a target="_blank" href="https://fb.com/afetocampolim">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a target="_blank" href="https://twitter.com/afetocampolim">
+                    <i class="fa fa-twitter" style="text-align: center;"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 centralized" style="font-size: 0.8em;">
+              <ul class="list-inline">
+                <div class="row">
+                  <li class="list-inline-item">
+                    <i class="fa fa-envelope" style="color: #aaa;"></i>
+                    <a href="mailto:contato@afetocampolim.com.br" target="_blank">
+                      contato@afetocampolim.com.br
+                    </a>
+                  </li>
+                </div>
+                <div class="row">
+                  <li class="list-inline-item">
+                    <i class="fa fa-whatsapp" style="color: green;"></i>
+                    <a href="https://api.whatsapp.com/send?phone=5515988314776" target="_blank">
+                      15 98831 4776
+                    </a>  
+                  </li>
+                </div>
+                </ul>
+            </div>  
+          </div>
+        </div>
       </div>
     </div>
 
